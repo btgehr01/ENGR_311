@@ -1,7 +1,7 @@
 import React from "react";
 
 const Team = () => {
-  return <div>Brady Gehrman</div>;
+  return <div>Team Name Cards</div>;
 };
 
 export default Team;
