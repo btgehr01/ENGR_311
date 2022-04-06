@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const Analytics_Section = () => {
   return (
-    <div>
+    <div id="analytics">
       <SectionHeader title="Analytics" icon="/" />
       <Video
         title="Analytics Video 1"

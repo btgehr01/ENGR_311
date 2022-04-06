@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const Automation_Section = () => {
   return (
-    <div>
+    <div id="automation">
       <SectionHeader title="Automation" icon="/" />
       <Video
         title="Automation Video 1"

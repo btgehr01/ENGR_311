@@ -3,12 +3,14 @@ import TopBanner from "./TopBanner";
 import AI_Section from "./AI_Section";
 import Automation_Section from "./Automation_Section";
 import Analytics_Section from "./Analytics_Section";
+import { Link } from "react-router-dom";
+import "./Main_Section.css";
 
 const Main_Section = () => {
   return (
-    <div>
+    <div className="Main_Section">
       <TopBanner />
-      <h3>Introduction</h3>
+      <h1>Introduction</h1>
       <AI_Section />
       <Automation_Section />
       <Analytics_Section />
