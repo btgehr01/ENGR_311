@@ -1,11 +1,14 @@
 .top-nav {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
 }
 .navBar {
+  width: 100%;
   color: #052d54;
-  background-color: transparent;
+  background-color: #41b3a3;
   display: flex;
   justify-content: space-around;
   align-items: center;

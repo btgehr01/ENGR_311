@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 const Automation_Section = () => {
   return (
     <div id="automation">
-      <SectionHeader title="Automation" icon="/" />
+      <SectionHeader title="Automation" />
       <Video
         title="Automation Video 1"
         videoURL="https://youtube.com/AutomationVideo1"
