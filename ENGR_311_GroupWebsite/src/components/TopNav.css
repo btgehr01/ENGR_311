@@ -8,7 +8,8 @@
 .navBar {
   width: 100%;
   color: #052d54;
-  background-color: #41b3a3;
+  /*background-color: #41b3a3;
+  background-color: #e6eaea;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,13 +20,17 @@
   font-size: 1.2rem;
   color: #052d54;
 }
-.navBar-link-container .navBar-link {
+.navBar-link-container .navBar-link,
+.navBar-link-game {
   color: #052d54;
   text-decoration: none;
   transition-duration: 500ms;
 }
 .navBar-link-container .navBar-link:hover {
   color: #edf5e1;
+}
+.navBar-link-container .navBar-link-game:hover {
+  opacity: 70%;
 }
 .navBar-button {
   width: 80px;
@@ -42,4 +47,9 @@
 }
 .navBar-button:hover {
   transform: scale(1.1);
+}
+.shadow {
+  -webkit-box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
+  -moz-box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
+  box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
 }
