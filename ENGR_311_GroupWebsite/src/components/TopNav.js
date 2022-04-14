@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./TopNav.css";
 import { Link, useLocation } from "react-router-dom";
 
 const TopNav = () => {
   const location = useLocation();
+  const [isAtHome, setIsAtHome] = useState(true);
+  useEffect(() => {
+    if (
+      location.pathname.split("/")[1] === "game" ||
+      location.pathname.split("/")[1] === "team"
+    ) {
+      setIsAtHome(false);
+    } else {
+      setIsAtHome(true);
+    }
+  }, [location]);
+  // console.log(location.pathname);
   return (
     <div className="top-nav">
       <div
-        className={`navBar ${
-          location.pathname.split("/")[1] === "game" ? "shadow" : ""
-        }`}
+        className={`navBar ${!isAtHome ? "shadow" : ""}`}
         style={
-          location.pathname.split("/")[1] === "game"
+          !isAtHome
             ? { backgroundColor: "#e6eaea" }
             : { backgroundColor: "#41b3a3" }
         }
@@ -22,21 +32,13 @@ const TopNav = () => {
         <div className="navBar-link-container">
           <Link
             to="/"
-            className={`${
-              location.pathname.split("/")[1] === "game"
-                ? "navBar-link-game"
-                : "navBar-link"
-            }`}
+            className={`${!isAtHome ? "navBar-link-game" : "navBar-link"}`}
           >
             Home
           </Link>
           <Link
             to="/game"
-            className={`${
-              location.pathname.split("/")[1] === "game"
-                ? "navBar-link-game"
-                : "navBar-link"
-            }`}
+            className={`${!isAtHome ? "navBar-link-game" : "navBar-link"}`}
           >
             Interactive Game
           </Link>
