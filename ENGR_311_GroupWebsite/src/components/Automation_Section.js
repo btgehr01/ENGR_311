@@ -4,18 +4,19 @@ import SectionHeader from "./SectionHeader";
 
 const Automation_Section = () => {
   return (
-    <div id="automation">
+    <div id="automation" className="section-body">
       <SectionHeader title="Automation" />
       <Video
-        title="Automation Video 1"
-        videoURL="https://youtube.com/AutomationVideo1"
+        title="Intro to Automation 1"
+        videoURL="https://www.youtube.com/embed/GUlJQSYNNEQ"
+        videoCaption="In this video we will go through the definition and history of automation."
       ></Video>
-      <p>Paraphraph summary on Automation video 1</p>
       <Video
-        title="Automation Video 2"
-        videoURL="https://youtube.com/AutomationVideo2"
+        title="Intro to Automation 2"
+        videoURL="https://www.youtube.com/embed/ENUHk9iYwCg"
+        videoCaption="In this video, we cover the types of automation and the reasons why you should use or not use automation."
       ></Video>
-      <p>Paraphraph summary on Automation video 2</p>
+      <hr></hr>
     </div>
   );
 };

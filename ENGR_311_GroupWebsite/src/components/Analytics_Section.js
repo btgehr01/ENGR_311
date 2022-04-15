@@ -4,18 +4,18 @@ import SectionHeader from "./SectionHeader";
 
 const Analytics_Section = () => {
   return (
-    <div id="analytics">
+    <div id="analytics" className="section-body">
       <SectionHeader title="Analytics" />
       <Video
-        title="Analytics Video 1"
-        videoURL="https://youtube.com/AnalyticsVideo1"
+        title="Intro to Data Analytics"
+        videoURL="https://www.youtube.com/embed/IPT9knAZ5YI"
+        videoCaption="This is an introductory video on simple data analytics concepts. No prior experience or knowledge required."
       ></Video>
-      <p>Paraphraph summary on Analytics video 1</p>
       <Video
-        title="Analytics Video 2"
-        videoURL="https://youtube.com/AnalyticsVideo2"
+        title="Data Analytics: Marketing Funnels"
+        videoURL="https://www.youtube.com/embed/KbX0spwJwyM"
+        videoCaption="This video explains the basics of marketing funnels and how they relate to data analytics."
       ></Video>
-      <p>Paraphraph summary on Analytics video 2</p>
     </div>
   );
 };

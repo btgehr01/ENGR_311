@@ -4,12 +4,20 @@ import SectionHeader from "./SectionHeader";
 
 const AI_Section = () => {
   return (
-    <div id="ai">
+    <div id="ai" className="section-body">
       <SectionHeader title="Artificial Intelligence" />
-      <Video title="AI Video 1" videoURL="https://youtube.com/AIVideo1"></Video>
-      <p>Paraphraph summary on AI video 1</p>
-      <Video title="AI Video 2" videoURL="https://youtube.com/AIVideo2"></Video>
-      <p>Paraphraph summary on AI video 2</p>
+      <Video
+        title="Introduction to AI: Neural Networks"
+        videoURL="https://www.youtube.com/embed/9Bi-i8YY5Q8"
+        videoCaption="In this video, we discuss an introduction to Artificial Intelligence and its concepts.  While diving deeper into the functionality of Neural Networks."
+      ></Video>
+
+      <Video
+        title="Introduction to AI: Neural Networks - Practical Examples"
+        videoURL="https://www.youtube.com/embed/iAveVhqfFfc"
+        videoCaption="In this video, we will go over some practical examples of neural networks that can be found throughout the internet."
+      ></Video>
+      <hr></hr>
     </div>
   );
 };
