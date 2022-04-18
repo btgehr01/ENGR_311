@@ -12,9 +12,9 @@ const Team = () => {
     { name: "Brady Gehrman", team: "Website Team", image: sample },
     { name: " Tahereh Alamdari", team: "Website Team", image: sample4 },
     { name: "Phanit Phou", team: "Website Team", image: sample },
-    { name: "Nathan Cecil", team: "Interactive Gam Team", image: sample },
-    { name: "Bryan Greenwood", team: "Interactive Gam Team", image: sample },
-    { name: "Zachary Waring", team: "Interactive Gam Team", image: sample },
+    { name: "Nathan Cecil", team: "Game Design Team", image: sample },
+    { name: "Bryan Greenwood", team: "Game Design Team", image: sample },
+    { name: "Zachary Waring", team: "Game Design Team", image: sample },
   ];
   return (
     <div className="team-section">
@@ -26,7 +26,7 @@ const Team = () => {
         <div className="team-member-outerContainer">
           <div className="team-member-container">
             {teamMember.map((value, index) => (
-              <TeamItem props={value} />
+              <TeamItem key={index} props={value} />
             ))}
           </div>
         </div>
