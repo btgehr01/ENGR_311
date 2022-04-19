@@ -30,12 +30,12 @@ const Game = () => {
                 </p>
               </div>
               <div className="game-des-step-right">
-                <img src={sample2} />
+                <img alt="demo1" src={sample2} />
               </div>
             </div>
             <div className="game-des-step-second">
               <div className="game-des-step-letf-second">
-                <img src={sample3} />
+                <img alt="demo2" src={sample3} />
               </div>
               <div className="game-des-step-right-second">
                 <h2>STEP 2</h2>
