@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./TopNav.css";
 import { Link, useLocation } from "react-router-dom";
+import robotIcon from "../assets/robotIcon.png";
 
 const TopNav = () => {
   const location = useLocation();
@@ -27,7 +28,8 @@ const TopNav = () => {
         }
       >
         <div className="navBar-logo-container">
-          <h1>TEAM LOGO</h1>
+          <img width="100px" src={robotIcon} />
+          <h3>Digital Transformation Center</h3>
         </div>
         <div className="navBar-link-container">
           <Link
