@@ -1,0 +1,61 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navBar {
+  width: 100%;
+  color: #052d54;
+  /*background-color: #41b3a3;
+  background-color: #e6eaea;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBar .navBar-link-container {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  color: #052d54;
+}
+.navBar-link-container .navBar-link,
+.navBar-link-game {
+  color: #052d54;
+  text-decoration: none;
+  transition-duration: 500ms;
+}
+.navBar-link-container .navBar-link:hover {
+  color: #edf5e1;
+}
+.navBar-link-container .navBar-link-game:hover {
+  opacity: 70%;
+}
+.navBar-button {
+  width: 80px;
+  background-color: #052d54;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 4px;
+  cursor: pointer;
+  transition-duration: 500ms;
+  text-decoration: none;
+}
+.navBar-button:hover {
+  transform: scale(1.1);
+}
+.shadow {
+  -webkit-box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
+  -moz-box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
+  box-shadow: 0 6px 4px -4px rgba(68, 68, 68, 0.5);
+}
+
+.navBar-logo-container{
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+}

@@ -1,0 +1,117 @@
+.game-section {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+.game-container {
+  background-color: #06334c;
+  width: 100%;
+  margin-top: 80px;
+  color: #e8ffff;
+  height: auto;
+}
+.game-des {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.game-des-container {
+  width: 1000px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.game-des-container h2 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.game-des-container p {
+  font-size: 20px;
+  color: #c5c3c3;
+  letter-spacing: 0.5px;
+}
+
+.game-title {
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+}
+.game-des-container .game-des-introduction {
+  padding: 40px 10px;
+  width: 70%;
+}
+.game-des-step {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.game-des-step .game-des-step-left {
+  padding: 20px;
+}
+.game-des-step .game-des-step-right {
+  display: flex;
+  justify-content: end;
+}
+.game-des-step .game-des-step-right img {
+  width: 450px;
+}
+.game-des-step-second {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.game-des-step-second .game-des-step-right-second {
+  padding: 40px;
+}
+.game-des-step-second .game-des-step-letf-second {
+  display: flex;
+  justify-content: start;
+}
+
+.game-des-step-second .game-des-step-letf-second img {
+  width: 450px;
+}
+.game-download-container {
+  height: 100px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+.game-download-container {
+  background-color: black;
+  font-size: 1.5rem;
+  border: 5px double #6f2232;
+  padding: 8px;
+  cursor: pointer;
+  transition-duration: 500ms;
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.game-download-container:hover {
+  transform: scale(1.05);
+}
+.shadowInner {
+  -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.game-download-container h4 {
+  font-size: 30px;
+  color: #c3073f;
+  letter-spacing: 0.1rem;
+}
